@@ -1,10 +1,19 @@
-const readline=require('readline-sync');
+const readline = require('readline-sync');
 const callfunction = require('./BinarySearchBL');
-try{
-    let string1=readline.question("Enter the string to search : ");
-    let ans = callfunction.binarysearch(string1);
-    console.log(ans);
+
+
+const fs=require('fs');
+async function test() {
+    try {
+        let file = await callfunction.filereading();
+        console.log("in main",file);
+        let string1=readline.question("Enter the string to search : ");
+         let ans = callfunction.binarysearch(string1,file);
+        console.log(ans);
+    }
+    catch (error) {
+        console.log(error);
+    }
 }
-catch(error){
-    console.log(error);
-}
+
+test();
