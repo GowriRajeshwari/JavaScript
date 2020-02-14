@@ -1,3 +1,4 @@
+const readline = require('readline-sync');
 module.exports={
     leapyear:(year)=>{
         if(year.toString().length == 4){
@@ -9,7 +10,10 @@ module.exports={
             }
         }
         else{
-            return "Ensure whether it is 4 digit no";
+            console.log("Ensure whether it is 4 digit no");    
+            let year=readline.questionInt("Enter the year : ");
+            let ans=module.exports.leapyear(year);
+            return ans;
         }
        
     }
