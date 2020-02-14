@@ -1,6 +1,6 @@
 module.exports={
     leapyear:(year)=>{
-        if(year.length == 4){
+        if(year.toString().length == 4){
             if( (year % 4 == 0 ) && (year % 100 == 0) || (year % 400 == 0) ){
                 return "Given Year is the Leap Year";
             }
