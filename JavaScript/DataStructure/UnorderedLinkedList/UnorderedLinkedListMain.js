@@ -26,8 +26,10 @@ try {
         ll.add(filereading[i]); 
     }
     let search = ll.search(addelement,filereading);
-    //console.log(search);
-    ll.printList();
+    
+    
+    let finalans = ll.printList();
+    let filesave = callfunction.filesave(finalans);
 }
 catch (error) {
     console.log(error);
