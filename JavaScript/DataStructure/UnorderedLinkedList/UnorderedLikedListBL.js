@@ -1,3 +1,4 @@
+const fs = require('fs');
 class Node{
     constructor(element) {
         this.element = element;
@@ -120,7 +121,7 @@ class Unorederslinkedlist {
             str += curr.element + " ";
             curr = curr.next;
         }
-        console.log(str);
+        return str;
     }
     search(addelement,filereading){
         let pos = 0;
@@ -151,9 +152,13 @@ module.exports = {
     Unorederslinkedlist,
     Node,
     filereading:() =>{
-        const fs = require('fs');
         var file= fs.readFileSync("Demofile.txt",'utf8');
         var file1 = file.split(" ");
         return file1;
+    },
+    filesave:(finalans)=>{
+        fs.writeFileSync("Demofile.txt",finalans,{encoding:'utf8',flag:'w'});
+        
     }
+
 }
