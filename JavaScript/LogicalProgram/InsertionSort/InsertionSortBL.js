@@ -1,7 +1,7 @@
 
 module.exports={
-    insertionsort:() =>{
-       let str ="hi firts this is gowri";
+    insertionsort:(str) =>{
+       //let str ="hi firts this is gowri";
        var s=str.split(" ");
        var s2 = [];
        for (let i=1 ;i<s.length; i++) 
