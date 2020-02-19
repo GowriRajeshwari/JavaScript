@@ -84,7 +84,11 @@ class Unorederslinkedlist {
         var curr = this.head;
         var str = "";
         while (curr) {
-            str += curr.element + " ";
+            
+            str += curr.element;
+            if(curr.next){
+                str += " "; 
+            }
             curr = curr.next;
         }
         return str;
