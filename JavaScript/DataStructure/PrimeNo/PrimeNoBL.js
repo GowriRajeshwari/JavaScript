@@ -3,7 +3,7 @@ module.exports = {
         let array = [[]];
         var start = 0;
         var end = 100;
-        var j1 = 0, j2 = 0;
+        var j1 = 1, j2 = 1;
         for (var i = 0; i < 10; i++) {
             array[i] = [[]];
         }
@@ -16,7 +16,15 @@ module.exports = {
             array[i] = new Array(j1);
             start = end + 1;
             end += 100;
-            j1 = 0;
+            j1 = 1;
+        }
+        start = 0;
+        end = 100;
+        for (let i = 0; i < 10; i++) {
+            let j=0;
+            array[i][j] = start.toString()+"-"+end.toString();
+            start = end + 1;
+            end += 100;
         }
         start = 0;
         end = 100;
@@ -31,11 +39,12 @@ module.exports = {
             }
             start = end + 1;
             end += 100;
-            j2 = 0;
+            j2 = 1;
         }
         console.log("The prime numbers between 0-1000 are:");
         start = 0;
         end = 100;
+        j2=0;
         var str = "";
         for (let i = 0; i < 10; i++) {
             for (let j = start; j <= end; j++) {
