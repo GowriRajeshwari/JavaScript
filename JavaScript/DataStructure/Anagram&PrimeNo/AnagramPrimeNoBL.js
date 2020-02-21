@@ -72,14 +72,15 @@ module.exports = {
         let j3 = 1;
         for (let i = 0; i < prime.length; i++){
             
-            for (let j = i + 1; j < prime.length; j++) {
-                
+            for (let j = 0; j < prime.length; j++) {
+                if(i!=j){
                 if (module.exports.areAnagram(prime[i].toString(), prime[j].toString())) {
                     array[ii][j3] = prime[i];
-                    console.log("  " + ii + "  " + j3 + "   " + prime[i]);
+                  //  console.log("  " + ii + "  " + j3 + "   " + prime[i]);
                     j3++;
                     
                 }
+            }
                 
             }
         }
