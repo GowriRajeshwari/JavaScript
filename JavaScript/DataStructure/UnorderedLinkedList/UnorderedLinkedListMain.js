@@ -10,7 +10,7 @@ If the Word is not found then add it to the list, and if it found then remove th
 In the end save the list into a file....
 *
 * @file : UnorderedLinkedListBL.js
-* @overview : Getting the sorted array.
+* @overview : Adding the value to the linked list.
 * @module : module_name - This is optional if expeclictly its an npm or local package
 * @author : Gowri Rajeshwari K <gowrikanaga216@gmail.com>
 * @version : v12.14.1
@@ -26,10 +26,9 @@ try {
         ll.add(filereading[i]); 
     }
     let search = ll.search(addelement,filereading);
-    
-    
     let finalans = ll.printList();
     let filesave = callfunction.filesave(finalans);
+    console.log(finalans);
 }
 catch (error) {
     console.log(error);

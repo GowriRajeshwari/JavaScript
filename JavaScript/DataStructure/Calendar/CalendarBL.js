@@ -38,7 +38,7 @@ module.exports = {
         process.stdout.write('\n');
         let d = module.exports.day(month, 1, year);
         let jj = 1;
-        let ii = 1;
+        let ii = 0;
         let count=1;
         for (let i = 0; i < d; i++) {
             array[jj][ii] = null;

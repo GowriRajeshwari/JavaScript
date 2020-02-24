@@ -96,7 +96,7 @@ module.exports = {
         res2.sort();
         for (let i = 0; i < res2.length; i++) {
             if (res1[i] != res2[i]) {
-                return false
+                return false;
             }
         }
         return true;
