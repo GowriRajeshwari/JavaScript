@@ -1,8 +1,8 @@
 const assert = require('chai').assert;
 const app = require('../BL/FlipCoinBL');
-describe('ReplaceString',function(){
+describe('Flip Coin',function(){
 
-    describe('replacestring()',function(){
+    describe('flipcoin()',function(){
         it('The Head% is greater than zero and less than 100 ',function(){
             assert.isBelow(app.flipcoin(10).headpercent,100);
             assert.isAbove(app.flipcoin(10).headpercent,0);
