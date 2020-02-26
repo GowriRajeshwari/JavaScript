@@ -1,6 +1,9 @@
 module.exports={
     powerof2:(x, n)=> {
-        if(!isNaN(x) && !isNaN(n) ){
+        if(isNaN(x) && isNaN(n) || x == null && n==null ||  (x &&n) < 0 || Math.floor(x) != x){
+            return undefined;
+        }
+        else{
             let result = 1;
       
             for (let i = 0; i < n; i++) {
@@ -8,9 +11,6 @@ module.exports={
             }
           
             return result;
-        }
-        else{
-            return undefined;
         }
       
       }
