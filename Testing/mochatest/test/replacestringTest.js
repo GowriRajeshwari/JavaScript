@@ -10,7 +10,7 @@ describe('ReplaceString',function(){
         it('returning string is in string type',function(){
             assert.typeOf(app.replacestring('gowri'),'string');
         })
-        it('string is an anumber',function(){
+        it('string is an number',function(){
             assert.equal(app.replacestring(1234),undefined);
         })
         it('string is a decimal value',function(){
