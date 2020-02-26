@@ -1,16 +1,17 @@
 module.exports={
-    powerof2:(no)=>{
-        if(0 <= no && no < 31){
-            let power=2;
-            for(let i=1;i<=no;i++){
-                console.log("2 ^ "+i+"= "+power);
-                power = power * 2 ;
+    powerof2:(x, n)=> {
+        if(!isNaN(x) && !isNaN(n) ){
+            let result = 1;
+      
+            for (let i = 0; i < n; i++) {
+              result = x * 2;
             }
-            //return "Power of 2 is completed"
+          
+            return result;
         }
         else{
-            console.log("The no should not greater than 31 & less than 0");
+            return undefined;
         }
-       
-    }
+      
+      }
 }
