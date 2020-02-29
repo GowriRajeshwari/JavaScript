@@ -1,0 +1,53 @@
+{
+    "rice" :[
+        {
+            "name":"Koginur",
+            "price":140,
+            "weight_in_kg":11
+        },
+        {
+            "name":"ponni",
+            "price":160,
+            "weight_in_kg":13
+        },
+        {
+            "name":"geeraga samba",
+            "price":240,
+            "weight_in_kg":6
+        }
+    ],
+    "wheat" :[
+        {
+            "name":"Maida",
+            "price":70,
+            "weight_in_kg":11
+        },
+        {
+            "name":"origo",
+            "price":242,
+            "weight_in_kg":3
+        },
+        {
+            "name":"macroni",
+            "price":123,
+            "weight_in_kg":34
+        }
+    ],
+    "pulse":[
+        {
+            "name":"sunflowerseed",
+            "price":145,
+            "weight_in_kg":45
+        },
+        {
+            "name":"lentils",
+            "price":222,
+            "weight_in_kg":3
+        },
+        {
+            "name":"peas",
+            "price":500,
+            "weight_in_kg":33
+        }
+    ]
+}
