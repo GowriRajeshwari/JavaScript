@@ -1,0 +1,36 @@
+{
+    "Doctor":[
+        {
+            "Name":"Gowri",
+            "ID":101,
+            "Specification":"Gynacologist",
+            "Availability_from":9.00,
+            "Availability_to":10.00,
+            "Popularity": 1,
+            "No_of_Patient":3
+        },
+        {
+            "Name":"Kiran",
+            "ID":102,
+            "Specification":"Neurologist",
+            "Availability_from":12.00,
+            "Availability_to":24.00,
+            "Popularity": 3,
+            "No_of_Patient":4
+        }
+    ],
+    "Patient":[
+        {
+          "PatientName":"divya",
+          "PatientId":301,
+          "Age":24,
+          "Phone":9876543254  
+        },
+        {
+            "PatientName":"asha",
+            "PatientId":302,
+            "Age":26,
+            "Phone":98765487764  
+          }
+    ]
+}
