@@ -10,13 +10,14 @@
  *  @version        : v12.14.1
  *  @since          : 05-02-2020
  ******************************************************************************/
-const stockLib = require('./stockManagementBL');
-try{
-    let main = () => {
-        let ST = new stockLib.StockManager();
-        ST.stockReport();
-    }   
-    main();
-}catch(err){
-    throw err;
+const stockLib = require("./stockManagementBL");
+try {
+  let main = () => {
+    //   let ST = new stockLib.StockManager();
+    //ST.stockReport();
+    stockLib;
+  };
+  main();
+} catch (err) {
+  throw err;
 }
