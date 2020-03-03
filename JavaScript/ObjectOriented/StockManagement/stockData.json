@@ -1,14 +1,1 @@
-{
-    "stock": [
-        {
-            "names": "Gowri",
-            "numbersOfStock": 10,
-            "price": 120
-        },
-        {
-            "names": "Rajeshwari",
-            "numbersOfStock": 20,
-            "price": 520
-        }
-    ]
-}
+{"stock":[{"names":"Gowri","numbersOfStock":10,"price":120},{"names":"Rajeshwari","numbersOfStock":20,"price":520},{"names":"gh","numbersOfStock":55,"price":55},{"names":"yju","numbersOfStock":56,"price":67}]}

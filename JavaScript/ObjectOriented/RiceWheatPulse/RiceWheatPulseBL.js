@@ -1,5 +1,5 @@
 /**
- * @module-Stock Report is executed using Getter ans Setter
+ * @class-Rice class with constructor
  */
 class rice {
   constructor(name, price, weight) {
@@ -9,7 +9,7 @@ class rice {
   }
 }
 /**
- * @module-Stock Report is executed using Getter ans Setter
+ * @class-Wheat class with constructor
  */
 class wheat {
   constructor(name, price, weight) {
@@ -19,7 +19,7 @@ class wheat {
   }
 }
 /**
- * @module-Stock Report is executed using Getter ans Setter
+ * @class-pulse class with constructor
  */
 class pulse {
   constructor(name, price, weight) {
@@ -29,7 +29,7 @@ class pulse {
   }
 }
 /**
- * @module-Stock Report is executed using Getter ans Setter
+ * @module-Inventory management for adding the rice,wheat,pulse
  */
 const fs = require("fs");
 const readline = require("readline-sync");
@@ -87,6 +87,9 @@ class inventoryManagement {
     this.inventories.pulse.push(JSON.parse(JSON.stringify(Pulsedetails)));
     fs.writeFileSync("InventoryData.json", JSON.stringify(this.inventories));
   }
+  /**
+   * @module-Calculating the total price of rice,wheat,pulse in Base class
+   */
   calculateInventoryTotal() {
     let riceTotal = 0;
     let plusesTotal = 0;
@@ -109,6 +112,9 @@ class inventoryManagementduplicate extends inventoryManagement {
   constructor() {
     super();
   }
+  /**
+   * @module-Calculating the total price of rice,wheat,pulse in Sub class
+   */
   calculateInventoryTotal() {
     let riceTotal = 0;
     let plusesTotal = 0;
