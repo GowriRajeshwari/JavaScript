@@ -7,7 +7,7 @@
  *  @description    : Observer Design Pattern
  *
  *  @file           : ObserverPatternMain.js
- *  @overview       : Singleton design pattern
+ *  @overview       : Observer design pattern
  *  @module         : module_name This is optional if expeclictly its an npm or local package
  *  @author         : Gowri Rajeshwari<gowrikanaga216@@gmail.com>
  *  @version        : v12.14.1
