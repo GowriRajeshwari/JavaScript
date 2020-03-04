@@ -32,7 +32,6 @@ function TicketAdapter(credentials) {
     }
   };
 }
-
 var pricing = new TicketPrice();
 var credentials = { token: "300a" };
 var adapter = new TicketAdapter(credentials);
